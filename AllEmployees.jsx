@@ -10,7 +10,7 @@ const AllEmployees = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch('http://172.16.3.174:5000/api/employee', {
+      const res = await fetch('/api/employee', {
         credentials: 'include',
       });
       const data = await res.json();
@@ -54,7 +54,7 @@ const handleLogout = async () => {
 
 
   const handleDelete = async (id) => {
-    await fetch(`http://172.16.3.174:5000/api/employee/${id}`, { method: 'DELETE' });
+    await fetch(`/${id}`, { method: 'DELETE' });
     const updated = employees.filter(emp => emp._id !== id);
     setEmployees(updated);
     setFilteredEmployees(updated);
@@ -104,3 +104,4 @@ const handleLogout = async () => {
 
 
 export default AllEmployees;
+
