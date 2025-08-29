@@ -19,7 +19,7 @@ app.config.update(
 )
 
 # MongoDB setup
-client = MongoClient("mongodb+srv://Emoplyee:Shayan@cluster0.sk2nwv3.mongodb.net/")
+client = MongoClient("mongodb+srv://-/")
 db = client["data"]
 collection = db["value"]
 
@@ -191,4 +191,5 @@ def check_login():
 
 if __name__ == '__main__':
     app.run(host='172.16.3.174', port=5000, debug=True)
+
  
