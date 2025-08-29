@@ -15,7 +15,8 @@
       e.preventDefault();
 
       try {
-        const response = await fetch('http://172.16.3.174:5000/api/admin/login', {
+        const response = await fetch('Ip address
+                                     /api/admin/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(credentials),
@@ -83,3 +84,4 @@
   };
 
   export default AdminLogin;
+
