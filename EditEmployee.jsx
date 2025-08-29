@@ -31,7 +31,7 @@ const EditEmployee = () => {
   ]);
 
   useEffect(() => {
-    fetch(`http://172.16.3.174:5000/api/employee/${id}`)
+    fetch(`/api/employee/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setEmployee(data);
@@ -310,3 +310,4 @@ const EditEmployee = () => {
 };
 
 export default EditEmployee;
+
