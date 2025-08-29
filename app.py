@@ -11,7 +11,7 @@ import secrets
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'
-CORS(app, origins=["http://172.16.3.174:3000"], supports_credentials=True)
+CORS(app, origins=["Ip address"], supports_credentials=True)
 
 app.config.update(
     SESSION_COOKIE_SAMESITE="Lax", 
@@ -190,6 +190,7 @@ def check_login():
 # ------------------ Run Server ------------------
 
 if __name__ == '__main__':
-    app.run(host='172.16.3.174', port=5000, debug=True)
+    app.run(host='Ip address', port=5000, debug=True)
 
  
+
